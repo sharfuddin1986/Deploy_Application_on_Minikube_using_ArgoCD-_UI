@@ -61,10 +61,7 @@ Step-4     ######## Install ArgoCD  ##################
        Retrieve the initial admin password for ArgoCD:
        kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 
-       <a href="https://git-scm.com/" rel="nofollow">
-       <img src="https://github.com/sharfuddin1986/Deploy_Application_on_Minikube_using_ArgoCD-_UI/blob/main/1.jpg" width="100" 
-       height="100" style="max-width: 100%; padding :10px">
-
+      
 
 Step-5    ####### Deploy Guest book Applicaion  from ArgoCD UI ####################
 
