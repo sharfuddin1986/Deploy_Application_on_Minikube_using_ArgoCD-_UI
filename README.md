@@ -79,6 +79,8 @@ Step-5    ####### Deploy Guest book Applicaion  from ArgoCD UI #################
        Destination-https://kubernetes.default.svc  (Bydefault come)
        Namespace-default      (Because i set default namespace in minikube)
        Create
+       ![4.jpg](https://github.com/user-attachments/assets/fd7708dc-1ff3-4f02-8532-6a7fc7abc9c5)
+       
        click app  then sync after syncronise click
        kubectl get pods
        kubectl get svc
@@ -87,6 +89,7 @@ Step-5    ####### Deploy Guest book Applicaion  from ArgoCD UI #################
 
       kubectl port-forward --address 0.0.0.0 svc/helm-guestbook 9090:80
       http://54.87.56.123:9090/
+      ![5.jpg](https://github.com/user-attachments/assets/b306cc93-f487-4214-8ce1-7351114ba858)
       After that Application is runing and working fine
       
          
