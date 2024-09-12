@@ -45,6 +45,7 @@ Step-2       ####### Install Minikube #############
        minikube status
        
 Step-3     #######  Install Kubectl ##################
+
          sudo snap install kubectl --classic
          kubectl version
 
