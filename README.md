@@ -63,6 +63,8 @@ Step-4     ######## Install ArgoCD  ##################
 
        
    ![1.png](https://github.com/user-attachments/assets/0a6ef1e5-3fd3-4fc9-81b1-d09e793f3210)
+   ![2.jpg](https://github.com/user-attachments/assets/68fc010f-8ccb-4127-b48f-f983a067fb10)
+   ![3.jpg](https://github.com/user-attachments/assets/9fa69d0e-fc83-4525-ac12-fb1c65e396d9)
  
 
 Step-5    ####### Deploy Guest book Applicaion  from ArgoCD UI ####################
