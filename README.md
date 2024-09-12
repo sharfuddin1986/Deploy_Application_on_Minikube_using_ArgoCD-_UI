@@ -60,6 +60,9 @@ Step-4     ######## Install ArgoCD  ##################
        https://54.87.56.123:8080/
        Retrieve the initial admin password for ArgoCD:
        kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+
+       <a href="https://git-scm.com/" rel="nofollow">
+   <img src="https://github.com/sharfuddin1986/Deploy_Application_on_Minikube_using_ArgoCD-_UI/blob/main/1.jpg" alt="Docker" width="100" height="100" style="max-width: 100%; padding :10px">
        
 [(https://github.com/sharfuddin1986/Deploy_Application_on_Minikube_using_ArgoCD-_UI/blob/32e01428947c8f2d6a728ab1a791041eaaa3c003/1.jpg)
 
