@@ -80,7 +80,9 @@ Step-5    ####### Deploy Guest book Applicaion  from ArgoCD UI #################
        Namespace-default      (Because i set default namespace in minikube)
        Create
        
-    ![4.jpg](https://github.com/user-attachments/assets/38ca4198-3d07-48be-8871-4c812adab528)
+
+  ![4.jpg](https://github.com/user-attachments/assets/1e020f60-955a-4727-84f0-cd65238e84aa)
+
        
        click app  then sync after syncronise click
        kubectl get pods
