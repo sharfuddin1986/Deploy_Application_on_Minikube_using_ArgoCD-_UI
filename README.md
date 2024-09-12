@@ -61,7 +61,7 @@ Step-4     ######## Install ArgoCD  ##################
        Retrieve the initial admin password for ArgoCD:
        kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
        
-1.jpg
+[1.jpg](https://github.com/sharfuddin1986/Deploy_Application_on_Minikube_using_ArgoCD-_UI/blob/32e01428947c8f2d6a728ab1a791041eaaa3c003/1.jpg)
 
 2.jpg
 
