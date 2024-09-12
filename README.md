@@ -28,7 +28,7 @@ Step-1        ####### Install Docker ########
        docker --version
        Docker version 27.2.1, build 9e34c9b
 
-Step-2        ####### Install Minikube ########
+Step-2       ####### Install Minikube #############
 
    
        page link  for installation of minikube 
@@ -43,4 +43,46 @@ Step-2        ####### Install Minikube ########
        Start Minikube and Check Status:
        minikube start
        minikube status
+       
+Step-3     #######  Install Kubectl ##################
+         sudo snap install kubectl --classic
+         kubectl version
+
+Step-4     ######## Install ArgoCD  ##################
+
+       kubectl create namespace argocd
+       kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+       kubectl get pod -n argocd
+       kubectl port-forward svc/argocd-server -n argocd --address 0.0.0.0 8080:443
+       
+       After Port forwading need to access through Public ip of ec2 instance with port
+       https://54.87.56.123:8080/
+       Retrieve the initial admin password for ArgoCD:
+       kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+
+
+Step-5    ####### Deploy Guest book Applicaion  from ArgoCD UI ####################
+
+       Deploy your first application using deployment.yaml
+       Click new app + button 
+       Application name-helm-guestbook 
+       Project name-default
+       sync policy-manual
+       source Repository-https://github.com/argoproj/argocd-example-apps
+       Path-helm-guestbook
+       Destination-https://kubernetes.default.svc  (Bydefault come)
+       Namespace-default      (Because i set default namespace in minikube)
+       Create
+       click app  then sync after syncronise click
+       kubectl get pods
+       kubectl get svc
+       kubectl get deploy
+       Need to access application with specific port
+
+      kubectl port-forward --address 0.0.0.0 svc/helm-guestbook 9090:80
+      http://54.87.56.123:9090/
+      After that Application is runing and working fine
+      
+         
+       
        
