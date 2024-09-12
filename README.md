@@ -3,5 +3,7 @@
 # Prerequisite:
   
   Install Docker 
+  
   Install minikube
+  
   Install kubectl
