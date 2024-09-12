@@ -60,7 +60,10 @@ Step-4     ######## Install ArgoCD  ##################
        https://54.87.56.123:8080/
        Retrieve the initial admin password for ArgoCD:
        kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
-
+       
+1.jpg
+2.jpg
+3.jpg
 
 Step-5    ####### Deploy Guest book Applicaion  from ArgoCD UI ####################
 
